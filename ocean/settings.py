@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'ocean.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'DCKZvk5ax4lqzI2y4816',
+        'HOST': 'containers-us-west-82.railway.app',
+        'PORT': '7187',
     }
 }
 
