@@ -1,0 +1,7 @@
+
+<h3>Saving Form</h3>
+<a href="{% url 'sample' %}">go back</a>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+</form>

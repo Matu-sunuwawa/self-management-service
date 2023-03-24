@@ -1,0 +1,13 @@
+
+
+<a href="{% url 'savingacc-create' %}">see form</a><br>
+<a href="{% url 'saving-detail' %}">see detail</a>
+
+<h3>My Ocean</h3><br>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" placeholder="enter the amount" name="deposit">
+    <!-- <input type="text" placeholder="enter the amount" name="credit"> -->
+    <input type="submit" value="Deposite">
+</form>

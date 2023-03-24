@@ -1,0 +1,29 @@
+
+
+{% extends 'ocean_cs/main.html' %}
+{% block content %}
+
+
+<div class="header-bar">
+    <div>
+        <h1>Hello {{request.user|title}}</h1>
+        <h3 style="margin: 0;">choose account type.</h3>
+    </div>
+
+    {% if request.user.is_authenticated %}
+    <!-- <p>{{request.user}}</p> -->
+    <a href="{% url 'logout' %}">Log out</a>
+    {% else %}
+    <a href="{% url 'login' %}">Log in</a>
+    {% endif %}
+</div>
+
+
+<div class="card-body">
+<!-- <p><a href="{% url 'HomePage' %}">Go to saving</a></p> -->
+<p><a href="{% url 'HomePage' %}"><button class="button">Go to saving</button></a></p>
+<p><a href="{% url 'creditdep' %}"><button class="button">Go to credit</button></a></p>
+</div>
+
+{% endblock %}
+

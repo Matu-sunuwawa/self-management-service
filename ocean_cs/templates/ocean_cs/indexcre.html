@@ -1,0 +1,38 @@
+
+
+{% extends 'ocean_cs/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <a href="{% url 'main' %}">&#8592; Go back</a>
+</div>
+
+<div class="card-body">
+    <form action="/viewcred/" method="POST">
+        {% csrf_token %}
+        <p><input class="button" type="submit" value="View"><span class="view"> {{camt}}</span></p>
+    </form>
+
+    <form action="/creditdep/" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="Enter the amount" name="deposit" required><br><br>
+        <!-- <input type="text" placeholder="enter the amount" name="credit"> -->
+        <input class="button" type="submit" value="Deposite">
+    </form><br><br>
+
+    <form action="/creditwith/" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="Enter the amount" name="withdraw" required><br><br>
+        <!-- <input type="text" placeholder="enter the amount" name="credit"> -->
+        <input class="button" type="submit" value="Withdraw">
+    </form><br>
+    <div>
+        {% for message in messages %}
+        <h3 style="color: red;"> {{message}} </h3>
+        {% endfor %}
+    </div>
+
+</div>
+
+    {% endblock %}
+
