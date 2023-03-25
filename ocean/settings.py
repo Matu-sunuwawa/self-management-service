@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'ocean.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': 'Splj3Al8I7kWjo8C05rl',
