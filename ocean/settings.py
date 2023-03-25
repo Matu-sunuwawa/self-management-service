@@ -17,7 +17,7 @@ from pathlib import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# CSRF_TRUSTED_ORIGINS = ['https://self-management-service-production.up.railway.app', 'https://self-management-service-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://self-management-service-production.up.railway.app', 'https://self-management-service-production.up.railway.app']
 
 
 # Quick-start development settings - unsuitable for production
