@@ -17,7 +17,7 @@ from pathlib import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-CSRF_TRUSTED_ORIGINS = ['https://self-management-service-production.up.railway.app', 'https://self-management-service-production.up.railway.app']
+# CSRF_TRUSTED_ORIGINS = ['https://self-management-service-production.up.railway.app', 'https://self-management-service-production.up.railway.app']
 
 
 # Quick-start development settings - unsuitable for production
@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'ocean.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'Splj3Al8I7kWjo8C05rl',
-        'HOST': 'containers-us-west-176.railway.app',
-        'PORT': '6257',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
